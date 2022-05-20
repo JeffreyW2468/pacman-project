@@ -1,19 +1,9 @@
-import java.awt.*;
-import javax.swing.*;
+import javax.swing.JFrame;
 public class test {
-    private static void createWindow(){
-        JFrame frame = new JFrame("test GUI");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JLabel textLabel = new JLabel("new testing message", SwingConstants.CENTER);
-        textLabel.setPreferredSize(new Dimension(300, 100));
-        frame.getContentPane().add(textLabel, BorderLayout.CENTER);
-        frame.setLocationRelativeTo(null);
-        frame.pack();
-        frame.setVisible(true);
-    }
-
-    public static void main(String[] args){
-        createWindow();
-    }
-
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("MiniMan");
+		frame.setSize(1074, 1060);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
 }
